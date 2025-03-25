@@ -13,6 +13,9 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
+    final double screenHeight = MediaQuery.of(context).size.height;
+    final double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: AppTheme.darkTheme.scaffoldBackgroundColor,
       body: Center(
@@ -21,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Column(
               children: [
-                const SizedBox(height: 120),
+                SizedBox(height: screenHeight * 0.15),
                 Text('Quran App', style: AppTextStyles.splashHeading),
                 const SizedBox(height: 16),
                 Padding(
@@ -33,10 +36,14 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
                 const SizedBox(height: 49),
-                SvgPicture.asset('assets/images/splash_image.svg'),
+                // SizedBox(height: screenHeight * 0.01),
+                SvgPicture.asset(
+                  'assets/images/splash_image.svg',
+                  width: screenWidth * 0.75,
+                ),
               ],
             ),
-            Positioned(bottom: 200, child: SplashButton()),
+            Positioned(bottom: screenHeight * 0.175, child: SplashButton()),
           ],
         ),
       ),

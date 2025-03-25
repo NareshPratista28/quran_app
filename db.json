@@ -1,0 +1,285 @@
+{
+	"last_read": {
+		"surah": "Ibrahim",
+		"ayah": 24
+	},
+	"surah": [
+		{
+			"id": 1,
+			"name": "Al-Fatihah",
+			"revelation": "Meccan",
+			"total_verses": 7,
+			"arabic": "الفاتحة"
+		},
+		{
+			"id": 2,
+			"name": "Al-Baqarah",
+			"revelation": "Medinan",
+			"total_verses": 286,
+			"arabic": "البقرة"
+		},
+		{
+			"id": 3,
+			"name": "Al-Imran",
+			"revelation": "Medinan",
+			"total_verses": 200,
+			"arabic": "آل عمران"
+		},
+		{
+			"id": 4,
+			"name": "An-Nisa",
+			"revelation": "Medinan",
+			"total_verses": 176,
+			"arabic": "النساء"
+		},
+		{
+			"id": 5,
+			"name": "Al-Ma'idah",
+			"revelation": "Medinan",
+			"total_verses": 120,
+			"arabic": "المائدة"
+		},
+		{
+			"id": 6,
+			"name": "Al-An'am",
+			"revelation": "Meccan",
+			"total_verses": 165,
+			"arabic": "الأنعام"
+		},
+		{
+			"id": 7,
+			"name": "Al-A'raf",
+			"revelation": "Meccan",
+			"total_verses": 206,
+			"arabic": "الأعراف"
+		},
+		{
+			"id": 8,
+			"name": "Al-Anfal",
+			"revelation": "Medinan",
+			"total_verses": 75,
+			"arabic": "الأنفال"
+		},
+		{
+			"id": 9,
+			"name": "At-Tawbah",
+			"revelation": "Medinan",
+			"total_verses": 129,
+			"arabic": "التوبة"
+		},
+		{
+			"id": 10,
+			"name": "Yunus",
+			"revelation": "Meccan",
+			"total_verses": 109,
+			"arabic": "يونس"
+		},
+		{
+			"id": 11,
+			"name": "Hud",
+			"revelation": "Meccan",
+			"total_verses": 123,
+			"arabic": "هود"
+		},
+		{
+			"id": 12,
+			"name": "Yusuf",
+			"revelation": "Meccan",
+			"total_verses": 111,
+			"arabic": "يوسف"
+		},
+		{
+			"id": 13,
+			"name": "Ar-Ra'd",
+			"revelation": "Medinan",
+			"total_verses": 43,
+			"arabic": "الرعد"
+		},
+		{
+			"id": 14,
+			"name": "Ibrahim",
+			"revelation": "Meccan",
+			"total_verses": 52,
+			"arabic": "إبراهيم"
+		},
+		{
+			"id": 15,
+			"name": "Al-Hijr",
+			"revelation": "Meccan",
+			"total_verses": 99,
+			"arabic": "الحجر"
+		}
+	],
+	"juz": [
+		{
+			"id": 1,
+			"name": "Juz 1",
+			"start": {
+				"surah": "Al-Fatihah",
+				"ayah": 1
+			},
+			"end": {
+				"surah": "Al-Baqarah",
+				"ayah": 141
+			},
+			"verse_count": 148
+		},
+		{
+			"id": 2,
+			"name": "Juz 2",
+			"start": {
+				"surah": "Al-Baqarah",
+				"ayah": 142
+			},
+			"end": {
+				"surah": "Al-Baqarah",
+				"ayah": 252
+			},
+			"verse_count": 111
+		},
+		{
+			"id": 3,
+			"name": "Juz 3",
+			"start": {
+				"surah": "Al-Baqarah",
+				"ayah": 253
+			},
+			"end": {
+				"surah": "Al-Imran",
+				"ayah": 92
+			},
+			"verse_count": 126
+		},
+		{
+			"id": 4,
+			"name": "Juz 4",
+			"start": {
+				"surah": "Al-Imran",
+				"ayah": 93
+			},
+			"end": {
+				"surah": "An-Nisa",
+				"ayah": 23
+			},
+			"verse_count": 131
+		},
+		{
+			"id": 5,
+			"name": "Juz 5",
+			"start": {
+				"surah": "An-Nisa",
+				"ayah": 24
+			},
+			"end": {
+				"surah": "An-Nisa",
+				"ayah": 147
+			},
+			"verse_count": 124
+		},
+		{
+			"id": 6,
+			"name": "Juz 6",
+			"start": {
+				"surah": "An-Nisa",
+				"ayah": 148
+			},
+			"end": {
+				"surah": "Al-Ma'idah",
+				"ayah": 81
+			},
+			"verse_count": 110
+		},
+		{
+			"id": 7,
+			"name": "Juz 7",
+			"start": {
+				"surah": "Al-Ma'idah",
+				"ayah": 82
+			},
+			"end": {
+				"surah": "Al-An'am",
+				"ayah": 110
+			},
+			"verse_count": 128
+		},
+		{
+			"id": 8,
+			"name": "Juz 8",
+			"start": {
+				"surah": "Al-An'am",
+				"ayah": 111
+			},
+			"end": {
+				"surah": "Al-A'raf",
+				"ayah": 87
+			},
+			"verse_count": 133
+		}
+	],
+	"bookmarks": [
+		{
+			"id": 1,
+			"surah": "Al-Fatihah",
+			"surah_id": 1,
+			"ayah": 5,
+			"date_added": "2025-02-15T09:30:00Z",
+			"note": "Guide us to the straight path"
+		},
+		{
+			"id": 2,
+			"surah": "Al-Baqarah",
+			"surah_id": 2,
+			"ayah": 255,
+			"date_added": "2025-02-20T14:45:00Z",
+			"note": "Ayatul Kursi - The Throne Verse"
+		},
+		{
+			"id": 3,
+			"surah": "Al-Imran",
+			"surah_id": 3,
+			"ayah": 190,
+			"date_added": "2025-03-01T18:20:00Z",
+			"note": "Signs for those of understanding"
+		},
+		{
+			"id": 4,
+			"surah": "An-Nisa",
+			"surah_id": 4,
+			"ayah": 36,
+			"date_added": "2025-03-10T21:15:00Z",
+			"note": "Worship Allah and be good to parents"
+		},
+		{
+			"id": 5,
+			"surah": "Al-Ma'idah",
+			"surah_id": 5,
+			"ayah": 3,
+			"date_added": "2025-03-20T12:00:00Z",
+			"note": "This day I have perfected for you your religion"
+		},
+		{
+			"id": 6,
+			"surah": "Al-An'am",
+			"surah_id": 6,
+			"ayah": 50,
+			"date_added": "2025-03-25T16:45:00Z",
+			"note": "Say: I do not possess for you the treasures of Allah"
+		},
+		{
+			"id": 7,
+			"surah": "Al-A'raf",
+			"surah_id": 7,
+			"ayah": 26,
+			"date_added": "2025-03-28T10:10:00Z",
+			"note": "O children of Adam, We have bestowed upon you clothing"
+		},
+		{
+			"id": 8,
+			"surah": "At-Tawbah",
+			"surah_id": 9,
+			"ayah": 111,
+			"date_added": "2025-04-02T08:30:00Z",
+			"note": "Indeed, Allah has purchased from the believers their lives"
+		}
+	]
+}

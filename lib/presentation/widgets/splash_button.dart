@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:quran_app/core/theme/theme_constants.dart';
 
 class SplashButton extends StatelessWidget {
@@ -14,12 +15,12 @@ class SplashButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
       ),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          context.go('/home');
+        },
         style: ElevatedButton.styleFrom(
-          backgroundColor:
-              Colors.transparent, // Transparan karena pakai BoxDecoration
-          shadowColor:
-              Colors.transparent, // Hilangkan default shadow ElevatedButton
+          backgroundColor: Colors.transparent,
+          shadowColor: Colors.transparent,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
           ),
