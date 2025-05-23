@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:quran_app/core/theme/theme_constants.dart';
 import 'package:quran_app/presentation/providers/quran_provider.dart';
 import 'package:quran_app/presentation/widgets/bookmark_list.dart';
@@ -50,11 +51,14 @@ class _TabNavigationState extends State<TabNavigation>
 
   @override
   Widget build(BuildContext context) {
+    final quranProvider = Provider.of<QuranProvider>(context);
     return Column(
       children: [
         _buildTabBar(),
         const SizedBox(height: 16),
-        _buildTabContent(),
+        quranProvider.isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : _buildTabContent(),
       ],
     );
   }

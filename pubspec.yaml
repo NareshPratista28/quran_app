@@ -56,6 +56,7 @@ flutter:
   assets:
     - assets\images\splash_image.svg
     - assets\images\last_read_home.svg
+    - assets\images\detail_screen_banner.svg
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

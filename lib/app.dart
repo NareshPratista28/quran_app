@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:quran_app/presentation/providers/quran_provider.dart';
 import 'package:quran_app/presentation/screens/home_screen.dart';
 import 'package:quran_app/presentation/screens/splash_screen.dart';
+import 'package:quran_app/presentation/screens/surah_detail_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -25,6 +26,17 @@ final GoRouter _router = GoRouter(
   routes: [
     GoRoute(path: '/', builder: (context, state) => const SplashScreen()),
     GoRoute(path: '/home', builder: (context, state) => const HomeScreen()),
+    GoRoute(
+      path: '/surah/:id',
+      builder: (context, state) {
+        final surahId = int.tryParse(state.pathParameters['id'] ?? '1') ?? 1;
+        final Map<String, dynamic>? extra =
+            state.extra as Map<String, dynamic>?;
+        final surahName = extra?['surahName'] as String? ?? 'Surah';
+
+        return SurahDetailScreen(surahNumber: surahId, surahName: surahName);
+      },
+    ),
   ],
   errorBuilder:
       (context, state) => Scaffold(

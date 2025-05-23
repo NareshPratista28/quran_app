@@ -49,75 +49,65 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body:
-          quranProvider.isLoading
-              ? const Center(child: CircularProgressIndicator())
-              : SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Assalamu\'alaykum',
-                        style: AppTextStyles.headingSecondary,
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Naresh Pratista',
-                        style: AppTextStyles.headingPrimary,
-                      ),
-                      const SizedBox(height: 24),
-                      Stack(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Assalamu\'alaykum', style: AppTextStyles.headingSecondary),
+              const SizedBox(height: 4),
+              Text('Naresh Pratista', style: AppTextStyles.headingPrimary),
+              const SizedBox(height: 24),
+              Stack(
+                children: [
+                  SvgPicture.asset(
+                    'assets/images/last_read_home.svg',
+                    width: screenWidth * 1,
+                  ),
+                  Positioned(
+                    top: 10,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SvgPicture.asset(
-                            'assets/images/last_read_home.svg',
-                            width: screenWidth * 1,
-                          ),
-                          Positioned(
-                            top: 10,
-                            child: Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      Icon(
-                                        HugeIcons.strokeRoundedBookOpen02,
-                                        color: AppColors.textPrimary,
-                                        size: 32,
-                                      ),
-                                      const SizedBox(width: 8),
-                                      Text(
-                                        'Last Read',
-                                        style: AppTextStyles.lastReadTitle,
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 20),
-                                  Text(
-                                    quranProvider.lastRead?['surah'] ??
-                                        'Al-Fatihah',
-                                    style: AppTextStyles.lastReadSurah,
-                                  ),
-                                  const SizedBox(height: 4),
-                                  Text(
-                                    'Ayah No: ${quranProvider.lastRead?['ayah'] ?? '1'}',
-                                    style: AppTextStyles.lastReadAyah,
-                                  ),
-                                ],
+                          Row(
+                            children: [
+                              Icon(
+                                HugeIcons.strokeRoundedBookOpen02,
+                                color: AppColors.textPrimary,
+                                size: 32,
                               ),
-                            ),
+                              const SizedBox(width: 8),
+                              Text(
+                                'Last Read',
+                                style: AppTextStyles.lastReadTitle,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 20),
+                          Text(
+                            quranProvider.lastRead?['surah'] ?? 'Al-Fatihah',
+                            style: AppTextStyles.lastReadSurah,
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            'Ayah No: ${quranProvider.lastRead?['ayah'] ?? 1}',
+                            style: AppTextStyles.lastReadAyah,
                           ),
                         ],
                       ),
-                      const SizedBox(height: 24),
-                      TabNavigation(quranProvider: quranProvider),
-                    ],
+                    ),
                   ),
-                ),
+                ],
               ),
+              const SizedBox(height: 24),
+              TabNavigation(quranProvider: quranProvider),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

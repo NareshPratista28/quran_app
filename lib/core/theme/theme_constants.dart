@@ -42,7 +42,22 @@ class AppTextStyles {
     color: AppColors.textPrimary,
   );
   static TextStyle lastReadTitle = GoogleFonts.poppins(
-    fontSize: 18,
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textPrimary,
+  );
+  static TextStyle surahDetailTitle = GoogleFonts.poppins(
+    fontSize: 26,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textPrimary,
+  );
+  static TextStyle surahDetailTranslation = GoogleFonts.poppins(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textPrimary,
+  );
+  static TextStyle surahDetailRevelation = GoogleFonts.poppins(
+    fontSize: 14,
     fontWeight: FontWeight.w500,
     color: AppColors.textPrimary,
   );
